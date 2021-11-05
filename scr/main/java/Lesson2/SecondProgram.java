@@ -11,7 +11,7 @@ public class SecondProgram {
         long sub = subtraction(15, 5);
         System.out.println(sub);
 
-        long mult = multiplication(8, 8);
+        long mult = multiplication(7, 8);
         System.out.println(mult);
 
         float div = division(15, 2);
