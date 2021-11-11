@@ -10,11 +10,11 @@ public class QuadraticEquation {
         double D = b * b - 4 * a * c;
         if (a == 0) {
             System.out.println("Первый коэффициент не может быть равен 0!");
-        } else if (D < 0) {
+        } else if (D < 0d) {
             System.out.println("Квадратное уравнение " + a + "x^ + " + b + "x + " + c + " = 0 не имеет действительных решений.");
-        } else if (D == 0) {
+        } else if (D == 0d) {
             System.out.println("Квадратное уравнение " + a + "x^ + " + b + "x + " + c + " = 0 имеет один корень.");
-            double x = - b / (2 * (double) a);
+            double x = -b / (2 * (double) a);
             System.out.println("x =  " + x);
         } else {
             double x1 = (-b + Math.sqrt(D)) / (2 * a);
