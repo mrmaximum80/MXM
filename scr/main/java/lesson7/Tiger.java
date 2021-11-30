@@ -3,26 +3,20 @@ package lesson7;
 public class Tiger {
     String name;
     int age;
-    Integer maxRun;
-    Integer maxJump;
-    Integer maxSwim;
+    private static final Integer MAX_RUN = 1000;
+    private static final Integer MAX_JUMP = 3;
+    private static final Integer MAX_SWIM = 50;
 
-    public Tiger() {
-    }
-
-    public Tiger(String name, Integer maxRun, Integer maxJump, Integer maxSwim) {
+    public Tiger(String name) {
         this.name = name;
-        this.maxRun = maxRun;
-        this.maxJump = maxJump;
-        this.maxSwim = maxSwim;
     }
 
     public void run(Integer run) {
-        if (this.maxRun == null) {
+        if (this.MAX_RUN == null) {
             System.out.println("Тигр " + this.name + " не умеет бегать.");
         } else {
-            if (maxRun < run) {
-                System.out.println("Тигр " + this.name + " не смог пробежать " + run + " метров, пробежав " + this.maxRun + " метров, он устал.");
+            if (MAX_RUN < run) {
+                System.out.println("Тигр " + this.name + " не смог пробежать " + run + " метров, пробежав " + this.MAX_RUN + " метров, он устал.");
             } else {
                 System.out.println("Тигр " + this.name + " пробежал " + run + " метров.");
             }
@@ -30,11 +24,11 @@ public class Tiger {
     }
 
     public void jump(Integer jump) {
-        if (this.maxJump == null) {
+        if (this.MAX_JUMP == null) {
             System.out.println("Тигр " + this.name + " не умеет прыгать.");
         } else {
-            if (maxJump < jump) {
-                System.out.println("Тигр " + this.name + " не смог перепрыгнуть стену высотой " + jump + " метров, он не умеет прыгать выше " + this.maxJump + " метров.");
+            if (MAX_JUMP < jump) {
+                System.out.println("Тигр " + this.name + " не смог перепрыгнуть стену высотой " + jump + " метров, он не умеет прыгать выше " + this.MAX_JUMP + " метров.");
             } else {
                 System.out.println("Тигр " + this.name + " перепрыгнул стену высотой " + jump + " метров.");
             }
@@ -42,11 +36,11 @@ public class Tiger {
     }
 
     public void swim(Integer swim) {
-        if (this.maxSwim == null) {
+        if (this.MAX_SWIM == null) {
             System.out.println("Тигр " + this.name + " не умеет плавать.");
         } else {
-            if (maxSwim < swim) {
-                System.out.println("Тигр " + this.name + " не смог переплыть реку шириной " + swim + " метров, проплыв " + this.maxSwim + " метров, он утонул.");
+            if (MAX_SWIM < swim) {
+                System.out.println("Тигр " + this.name + " не смог переплыть реку шириной " + swim + " метров, проплыв " + this.MAX_SWIM + " метров, он утонул.");
             } else {
                 System.out.println("Тигр " + this.name + " переплыл реку шириной " + swim + " метров.");
             }

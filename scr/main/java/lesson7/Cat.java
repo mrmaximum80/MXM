@@ -4,26 +4,20 @@ public class Cat {
     String name;
     String color;
     int age;
-    Integer maxRun;
-    Integer maxJump;
-    Integer maxSwim;
+    private static final Integer MAX_RUN = 200;
+    private static final Integer MAX_JUMP = 2;
+    private static final Integer MAX_SWIM = null;
 
-    public Cat() {
-    }
-
-    public Cat(String name, Integer maxRun, Integer maxJump, Integer maxSwim) {
+    public Cat(String name) {
         this.name = name;
-        this.maxRun = maxRun;
-        this.maxJump = maxJump;
-        this.maxSwim = maxSwim;
     }
 
     public void run(Integer run) {
-        if (this.maxRun == null) {
+        if (this.MAX_RUN == null) {
             System.out.println("Кошка " + this.name + " не умеет бегать.");
         } else {
-            if (maxRun < run) {
-                System.out.println("Кошка " + this.name + " не смогла пробежать " + run + " метров, пробежав " + this.maxRun + " метров, она устала.");
+            if (MAX_RUN < run) {
+                System.out.println("Кошка " + this.name + " не смогла пробежать " + run + " метров, пробежав " + this.MAX_RUN + " метров, она устала.");
             } else {
                 System.out.println("Кошка " + this.name + " пробежала " + run + " метров.");
             }
@@ -31,11 +25,11 @@ public class Cat {
     }
 
     public void jump(Integer jump) {
-        if (this.maxJump == null) {
+        if (this.MAX_JUMP == null) {
             System.out.println("Кошка " + this.name + " не умеет прыгать.");
         } else {
-            if (maxJump < jump) {
-                System.out.println("Кошка " + this.name + " не смогла перепрыгнуть стену высотой " + jump + " метров, она не умеет прыгать выше " + this.maxJump + " метров.");
+            if (MAX_JUMP < jump) {
+                System.out.println("Кошка " + this.name + " не смогла перепрыгнуть стену высотой " + jump + " метров, она не умеет прыгать выше " + this.MAX_JUMP + " метров.");
             } else {
                 System.out.println("Кошка " + this.name + " перепрыгнула стену высотой " + jump + " метров.");
             }
@@ -43,11 +37,11 @@ public class Cat {
     }
 
     public void swim(Integer swim) {
-        if (this.maxSwim == null) {
+        if (this.MAX_SWIM == null) {
             System.out.println("Кошка " + this.name + " не умеет плавать.");
         } else {
-            if (maxSwim < swim) {
-                System.out.println("Кошка " + this.name + " не смогла переплыть реку шириной " + swim + " метров, проплыв " + this.maxSwim + " метров, она утонула.");
+            if (MAX_SWIM < swim) {
+                System.out.println("Кошка " + this.name + " не смогла переплыть реку шириной " + swim + " метров, проплыв " + this.MAX_SWIM + " метров, она утонула.");
             } else {
                 System.out.println("Кошка " + this.name + " переплыла реку шириной " + swim + " метров.");
             }
