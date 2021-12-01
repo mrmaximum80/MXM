@@ -1,8 +1,8 @@
 package lesson7;
 
 public class Tiger {
-    String name;
-    int age;
+    private String name;
+    private int age;
     private static final Integer MAX_RUN = 1000;
     private static final Integer MAX_JUMP = 3;
     private static final Integer MAX_SWIM = 50;

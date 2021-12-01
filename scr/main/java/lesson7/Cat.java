@@ -1,9 +1,9 @@
 package lesson7;
 
 public class Cat {
-    String name;
-    String color;
-    int age;
+    private String name;
+    private String color;
+    private int age;
     private static final Integer MAX_RUN = 200;
     private static final Integer MAX_JUMP = 2;
     private static final Integer MAX_SWIM = null;

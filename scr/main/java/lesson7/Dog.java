@@ -1,9 +1,9 @@
 package lesson7;
 
 public class Dog {
-    String name;
-    String breed;
-    int age;
+    private String name;
+    private String breed;
+    private int age;
     private static final Integer MAX_RUN = 500;
     private static final Integer MAX_JUMP = 2;
     private static final Integer MAX_SWIM = 10;

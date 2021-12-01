@@ -1,8 +1,8 @@
 package lesson7;
 
 public class Turtle {
-    String name;
-    int age;
+    private String name;
+    private int age;
     private static final Integer MAX_RUN = 20;
     private static final Integer MAX_JUMP = null;
     private static final Integer MAX_SWIM = 1000;
