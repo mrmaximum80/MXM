@@ -1,14 +1,26 @@
 package lesson8;
 
-public class Animal {
-    protected String name;      // Если сделать private, то не получается работать с полями в методах дочерних классов.
-    protected int age;          // Я что-то не то делаю?
-    protected String voice;
+public abstract class Animal {
+    private String name;
+    private int age;
+    private String voice;
 
     public Animal(String name, int age, String voice) {
         this.name = name;
         this.age = age;
         this.voice = voice;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getVoice() {
+        return voice;
     }
 
     public String kind() {
@@ -21,7 +33,7 @@ public class Animal {
         if (this instanceof Parrot) {
             return "Попугай";
         }
-        return "Животное";
+        return "";
     }
 
     public void voice() {

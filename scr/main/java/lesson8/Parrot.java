@@ -10,7 +10,7 @@ public class Parrot extends Animal {
 
     @Override
     public void voice() {
-        System.out.println("Собака " + this.name + " умеет " + this.voice + ".");
-        System.out.println("А eoe он может " + ANOTHER_VOICE + " на как воробей.\n");
+        System.out.println("Попугай " + getName() + " умеет " + getVoice() + ".");
+        System.out.println("А eщe он может " + ANOTHER_VOICE + " как воробей.\n");
     }
 }
