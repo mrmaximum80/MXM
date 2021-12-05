@@ -8,7 +8,7 @@ public final class Car extends Automobile{
     private static final int MAX_DISTANCE = 500;
 
     @Override
-    public void move(int distance) {
+    public final void move(int distance) {
         if (distance < MAX_DISTANCE) {
             System.out.println(getColor() + " автомобиль " + getBrand() + " " + getModel() + " проехал " + distance + " км без дозаправки.\n");
         } else {
