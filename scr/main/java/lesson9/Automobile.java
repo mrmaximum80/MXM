@@ -1,11 +1,10 @@
 package lesson9;
 
-public class Automobile  {
+public abstract class Automobile {
 
     protected String brand;
     private String model;
     private String color;
-    private int MAX_DISTANCE;
 
     public Automobile(String brand, String model, String color) {
         this.brand = brand;
@@ -25,8 +24,7 @@ public class Automobile  {
         return color;
     }
 
-    public void move (int distance) {
-        }
+    public abstract void move(int distance);
 }
 
 

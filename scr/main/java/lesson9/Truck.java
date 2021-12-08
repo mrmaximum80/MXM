@@ -1,10 +1,11 @@
 package lesson9;
 
-public class Truck extends Automobile{
+public class Truck extends Automobile {
 
-    public Truck (String brand, String model, String color) {
-        super (brand, model , color);
+    public Truck(String brand, String model, String color) {
+        super(brand, model, color);
     }
+
     private static final int MAX_DISTANCE = 1200;
 
     @Override
