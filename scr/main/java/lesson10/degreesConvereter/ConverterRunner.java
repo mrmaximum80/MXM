@@ -14,7 +14,7 @@ public class ConverterRunner {
         String initScaleWrite;                  // Название исходной шкалы
         String targetScaleWrite;                // Название целевой шкалы
         double initTemp;                        // Исходная температура
-        double targetTemp = 0;                  // Целевая температура
+        double targetTemp;                      // Целевая температура
 
         System.out.println("Введите исходную температурную шкалу, для чего нажмите:\n" +
                 "c - шкала Цельсия\n" +
@@ -30,35 +30,10 @@ public class ConverterRunner {
                 "c - шкала Цельсия\n" +
                 "k - шкала Кельвина\n" +
                 "f - шкала Фаренгейта");
-
         targetScale = input.InputString();
-        if (initScale.equals(targetScale)) {
-            System.out.println("Конвертировать из шкалы " + initScaleWrite + " в шкалу " + initScaleWrite + " не очень мудро )");
-            return;
-        }
         targetScaleWrite = DegreeScales.write(targetScale);
         System.out.println("Выбрана целевая шкала - шкала " + targetScaleWrite + ".\n");
-        if (initScale.equals(DegreeScales.CELSIUS.getScanScale())) {
-            if (targetScale.equals(DegreeScales.FAHRENHEIT.getScanScale())) {
-                targetTemp = degree.celsiusToFahrenheit(initTemp);
-            } else {
-                targetTemp = degree.celsiusToKelvin(initTemp);
-            }
-        }
-        if (initScale.equals(DegreeScales.FAHRENHEIT.getScanScale())) {
-            if (targetScale.equals(DegreeScales.CELSIUS.getScanScale())) {
-                targetTemp = degree.fahrenheitToCelsius(initTemp);
-            } else {
-                targetTemp = degree.fahrenheitToKelvin(initTemp);
-            }
-        }
-        if (initScale.equals(DegreeScales.KELVIN.getScanScale())) {
-            if (targetScale.equals(DegreeScales.CELSIUS.getScanScale())) {
-                targetTemp = degree.kelvinToCelsius(initTemp);
-            } else {
-                targetTemp = degree.kelvinToFahrenheit(initTemp);
-            }
-        }
+        targetTemp = degree.convert(initScale, targetScale, initTemp);
         System.out.println(initTemp + " градусов " + initScaleWrite + " равны " + targetTemp + " градусам "
                 + targetScaleWrite + ".");
     }

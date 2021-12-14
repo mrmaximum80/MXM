@@ -8,6 +8,7 @@ public class Input implements Inputable {
 
     /**
      * Метод циклически обрабатывает ввод с клавиатуры до тех пор, пока не будет введено число
+     *
      * @return - возвращает введеное число
      */
     @Override
@@ -22,6 +23,7 @@ public class Input implements Inputable {
 
     /**
      * Метод циклически обрабатывает ввод с клавиатуры до тех пор, пока не будет введено "c", "f" или "k"
+     *
      * @return - возвращает введеный символ в нижнем регистре
      */
     @Override
@@ -34,5 +36,4 @@ public class Input implements Inputable {
         while (!("c".equalsIgnoreCase(scale) || "f".equalsIgnoreCase(scale) || "k".equalsIgnoreCase(scale)));
         return scale.toLowerCase();
     }
-
 }

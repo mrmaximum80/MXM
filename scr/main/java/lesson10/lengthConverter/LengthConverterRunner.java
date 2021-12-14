@@ -16,16 +16,10 @@ public class LengthConverterRunner {
                 "m - мили\n" +
                 "k - километры");
         initUnit = input.InputString();
-        System.out.println("Введите длину в " + Lengths.write(initUnit));
 
+        System.out.println("Введите длину в " + Lengths.write(initUnit));
         initLength = input.InputNumber();
 
-        if (initUnit.equals("m")) {
-            System.out.println(initLength + " " + Lengths.MILE.getUnit() + " равняется " +
-                    length.milesToKm(initLength) + " " + Lengths.KM.getUnit() + ".");
-        } else {
-            System.out.println(initLength + " " + Lengths.KM.getUnit() + " равняется " +
-                    length.kmToMiles(initLength) + " " + Lengths.MILE.getUnit() + ".");
-        }
+        length.convert(initUnit, initLength);
     }
 }
