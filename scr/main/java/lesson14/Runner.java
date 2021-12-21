@@ -71,7 +71,7 @@ public class Runner {
         int i = 0;
         for (Iterator<Owner> iterator = owners.iterator(); iterator.hasNext(); ) {
             Owner owner = iterator.next();
-            System.out.print("Owner" + i + " counting...\r");
+            System.out.print("Owner" + i + " counting...\r");       // Просто чтобы видеть, что процесс идет
             i++;
             for (Iterator<Owner> anotherIterator = owners.iterator(); anotherIterator.hasNext(); ) {
                 Owner anotherOwner = anotherIterator.next();
@@ -116,14 +116,16 @@ public class Runner {
         startTime = Instant.now();
         System.out.println("Текущее время " + startTime.atZone(ZoneId.systemDefault()));
 
-        for (i = 0; i < owners1.length; i++) {
+        i = 0;
+        for (Owner owner : owners1) {
             System.out.print("Owner" + i + " counting...\r");
-            for (int j = 0; j < owners1.length; j++) {
+            i++;
+            for (Owner anotherOwner : owners1) {
                 List<Contact> phoneBook = new ArrayList<>();
-                phoneBook = owners1[j].getOwnerPhoneBook();
-                for (int k = 0; k < phoneBook.size(); k++) {
-                    if (owners1[i].getOwnerNumber().equals(phoneBook.get(k).getPhoneNumber())) {
-                        owners1[i].countIncrement();
+                phoneBook = anotherOwner.getOwnerPhoneBook();
+                for (Contact contact : phoneBook) {
+                    if (owner.getOwnerNumber().equals(contact.getPhoneNumber())) {
+                        owner.countIncrement();
                         break;
                     }
                 }

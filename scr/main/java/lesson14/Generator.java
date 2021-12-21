@@ -18,7 +18,6 @@ public class Generator {
 
     /**
      * Метод загружает списки мужских имен, женских имен, мужских отчеств, женских отчеств, а также мужских фамилий.
-     * В связи связи с чем у женщин генерирутся мужские фамилии, но на расчет это не влияет )
      *
      * @throws IOException
      */
@@ -155,9 +154,32 @@ public class Generator {
         } else {
             name = (femaleNames.get((int) (Math.random() * femaleNames.size())) + " " +
                     femalePatronymic.get((int) (Math.random() * femalePatronymic.size())) + " " +
-                    maleSurnames.get((int) (Math.random() * maleSurnames.size())));
+                    femaleSurnameGen());
         }
         return name;
+    }
+
+    /**
+     * Метод генерирует женскую фамилию на основании мужской
+     *
+     * @return - женская фамилия
+     */
+    public String femaleSurnameGen() {
+        String femaleSurname = maleSurnames.get((int) (Math.random() * maleSurnames.size()));
+        String end = femaleSurname.substring(femaleSurname.length() - 2);
+        if (femaleSurname.substring(femaleSurname.length() - 2).equals("ов") ||
+                femaleSurname.substring(femaleSurname.length() - 2).equals("ев") ||
+                femaleSurname.substring(femaleSurname.length() - 2).equals("ин") ||
+                femaleSurname.substring(femaleSurname.length() - 2).equals("ын")) {
+            femaleSurname += "а";
+        } else {
+            if (femaleSurname.substring(femaleSurname.length() - 2).equals("ий") ||
+                    femaleSurname.substring(femaleSurname.length() - 2).equals("ый") ||
+                    femaleSurname.substring(femaleSurname.length() - 2).equals("ой")) {
+                femaleSurname = femaleSurname.substring(0, femaleSurname.length() - 2) + "ая";
+            }
+        }
+        return femaleSurname;
     }
 
     /**
