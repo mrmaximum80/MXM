@@ -3,23 +3,21 @@ package lesson14;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Owner implements Cloneable, Comparable<Owner> {
+public class Owner implements Cloneable {
 
-    private String owner;
+    private String owners;
     private String ownerNumber;
     private String ownerOperator;
     private List<Contact> ownerPhoneBook;
-    private Integer count = 0;                      // счетчик, сколько раз номер встречается в других записных книжках
 
     public Owner() {
     }
 
     public Owner(Owner copy) {
-        this.owner = copy.owner;
+        this.owners = copy.owners;
         this.ownerNumber = copy.ownerNumber;
         this.ownerOperator = copy.ownerOperator;
         this.ownerPhoneBook = copy.ownerPhoneBook;
-        this.count = copy.count;
     }
 
     @Override
@@ -28,11 +26,11 @@ public class Owner implements Cloneable, Comparable<Owner> {
     }
 
     public String getOwner() {
-        return owner;
+        return owners;
     }
 
     public void setOwner(String owner) {
-        this.owner = owner;
+        this.owners = owner;
     }
 
     public String getOwnerNumber() {
@@ -58,22 +56,18 @@ public class Owner implements Cloneable, Comparable<Owner> {
     public void setOwnerPhoneBook(List<Contact> ownerPhoneBook) {
         this.ownerPhoneBook = ownerPhoneBook;
     }
-
-    public Integer getCount() {
-        return count;
-    }
-
-    public void setCount(Integer count) {
-        this.count = count;
-    }
-
-    public void countIncrement() {
-        this.count++;
-    }
-
-    @Override
-    public int compareTo(Owner o) {
-        return this.getCount().compareTo(o.getCount());
+    
+    public static void print (List<Owner> owners){
+        for(int i = 0; i < owners.size(); i++){
+            System.out.println(i + ". " + owners.get(i).getOwner() + ", тел.: " + owners.get(i).getOwnerNumber() + ", " +
+                    owners.get(i).getOwnerOperator());
+            System.out.println("----------------------------------------------------------------");
+            List<Contact>phoneBook = owners.get(i).getOwnerPhoneBook();
+            for (int j = 0; j < phoneBook.size(); j++){
+                System.out.println(j + ". " + phoneBook.get(j).getName() + ", тел.: " + phoneBook.get(j).getPhoneNumber() +
+                        phoneBook.get(j).getOperator());
+            }
+        }
     }
 
 }

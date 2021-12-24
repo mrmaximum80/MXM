@@ -215,12 +215,12 @@ public class Generator {
      */
     public List<Contact> phoneBookGen(List<People> peoples, String ownerPhone) {
 
-        int contactNumber = (int) (Math.random() * 51 + 450);   // принимаем, что контактов в записной книжке будет от 50 до 500
+        int contactNumber = (int) (Math.random() * 51 + 450);   //  51 + 450принимаем, что контактов в записной книжке будет от 50 до 500
         List<Contact> phoneBook = new ArrayList<>();
         int size = peoples.size();
         List<String> currentPhoneBook = new ArrayList<>(); // создаем дополнительный строковый список и добавлем в него
         currentPhoneBook.add(ownerPhone);                       // номер владельца, так как его точно не должно быть в его
-                                                                // телефонной книжке
+        // телефонной книжке
         for (int i = 0; i < contactNumber; i++) {
             int value = (int) (Math.random() * size);           // выбираем, кого занести в записную книжку
             boolean check = false;
@@ -238,6 +238,7 @@ public class Generator {
                 Contact contact = new Contact();
                 contact.setName(peoples.get(value).getFio());
                 contact.setPhoneNumber(peoples.get(value).getPhoneNumber());
+                contact.setOperator(peoples.get(value).getMobileOperator());
                 currentPhoneBook.add(peoples.get(value).getPhoneNumber());
                 phoneBook.add(contact);
             } else {
