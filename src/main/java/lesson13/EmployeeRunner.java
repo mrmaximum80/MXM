@@ -16,7 +16,7 @@ public class EmployeeRunner {
         // Данные для txt файла случайным образом генерируются на интернет ресурсах (в данном случае https://randomus.ru/name)
         // names10 можно заменить на next50 или names100 для загрузки соответственно списков из 50 или 100 человек
 
-        String str = "scr\\main\\java\\lesson13\\names10.txt";      // Метод "нагуглил".
+        String str = "src\\main\\java\\lesson13\\names10.txt";      // Метод "нагуглил".
         Path path = Path.of(str).toAbsolutePath();                  // Надеюсь не придется при проверке прописывать
         List<String> names = Files.readAllLines(path);              // путь вручную.
 

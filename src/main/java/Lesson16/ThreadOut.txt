@@ -1,0 +1,69 @@
+Logs map:
+
+<17:33:17><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:17><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:17><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:18><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:20><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:21><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:21><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:22><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:22><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:25><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:26><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:26><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:27><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:28><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:28><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:29><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:29><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:29><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:31><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:31><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:31><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:32><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:33><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:36><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:36><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:36><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:38><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:40><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:40><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:41><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:43><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:44><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:45><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:46><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:46><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:49><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:50><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:50><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:50><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:51><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:52><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:54><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:55><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:33:55><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:33:57><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:33:59><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:34:00><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:34:01><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:34:02><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:34:02><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:34:03><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:34:03><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:34:06><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:34:06><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:34:07><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:34:08><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:34:09><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:34:09><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:34:10><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:34:11><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:34:12><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:34:13><RUNNABLE><Thread One><ERROR><Ошибка!>
+<17:34:13><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:34:13><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:34:14><RUNNABLE><Thread Three><INFO><Информационное сообщение.>
+<17:34:16><RUNNABLE><Thread Two><WARN><Предупреждение!>
+<17:34:17><RUNNABLE><Thread One><ERROR><Ошибка!>

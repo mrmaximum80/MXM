@@ -23,23 +23,23 @@ public class Generator {
      */
     public void namesLoader() throws IOException {
 
-        String str = "scr\\main\\java\\lesson14\\names\\Male_names_short.txt";
+        String str = "src\\main\\java\\lesson14\\names\\Male_names_short.txt";
         Path path = Path.of(str).toAbsolutePath();
         maleNames = Files.readAllLines(path);
 
-        str = "scr\\main\\java\\lesson14\\names\\female_names_rus.txt";
+        str = "src\\main\\java\\lesson14\\names\\female_names_rus.txt";
         path = Path.of(str).toAbsolutePath();
         femaleNames = Files.readAllLines(path);
 
-        str = "scr\\main\\java\\lesson14\\names\\Male_patronymic_short.txt";
+        str = "src\\main\\java\\lesson14\\names\\Male_patronymic_short.txt";
         path = Path.of(str).toAbsolutePath();
         malePatronymic = Files.readAllLines(path);
 
-        str = "scr\\main\\java\\lesson14\\names\\female_patronymic_short.txt";
+        str = "src\\main\\java\\lesson14\\names\\female_patronymic_short.txt";
         path = Path.of(str).toAbsolutePath();
         femalePatronymic = Files.readAllLines(path);
 
-        str = "scr\\main\\java\\lesson14\\names\\male_surnames_rus.txt";
+        str = "src\\main\\java\\lesson14\\names\\male_surnames_rus.txt";
         path = Path.of(str).toAbsolutePath();
         maleSurnames = Files.readAllLines(path);
     }

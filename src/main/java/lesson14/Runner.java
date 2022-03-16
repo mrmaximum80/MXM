@@ -97,7 +97,7 @@ public class Runner {
         }
 
         // Сохраняем в файл полный список контактов, чтобы не загромождать консоль
-        str = "scr\\main\\java\\lesson14\\resultFiles\\ListContacts.txt";
+        str = "src\\main\\java\\lesson14\\resultFiles\\ListContacts.txt";
         path = Path.of(str).toAbsolutePath();
         newPath = path.toString();
         Write ListContactHead = new Write(newPath);
@@ -165,7 +165,7 @@ public class Runner {
         }
 
         // Сохраняем в файл полный список контактов, чтобы не загромождать консоль
-        str = "scr\\main\\java\\lesson14\\resultFiles\\ArrayContacts.txt";
+        str = "src\\main\\java\\lesson14\\resultFiles\\ArrayContacts.txt";
         path = Path.of(str).toAbsolutePath();
         newPath = path.toString();
         Write ArrayContactHead = new Write(newPath);

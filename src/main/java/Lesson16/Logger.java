@@ -11,7 +11,7 @@ import java.util.Date;
 public class Logger extends Thread {
 
     LogLevels logLevel;
-    private static String pathToFile = "scr\\main\\java\\lesson16\\ThreadOut.txt";
+    private static String pathToFile = "src\\main\\java\\lesson16\\ThreadOut.txt";
     private boolean append;
 
     public Logger(String name, LogLevels logLevel, boolean deamon, boolean append) {
